@@ -28,19 +28,19 @@ No external packages required, uses standard Python libraries:
 
 ## **Usage**
 
-1. **Run the caching proxy server:**
+1. Run the caching proxy server:**
 
 ```bash
 python main.py --port 3000 --origin http://dummyjson.com
 ```
-2. **Test with curl:
+2. Test with curl:
 ```bash
 curl -i http://localhost:3000/products
 ```
 First request → X-Cache: MISS
 Second request → X-Cache: HIT
 
-2. **Clear cache:
+2. Clear cache:
 ```bash
 python main.py --clear-cache
 ```
